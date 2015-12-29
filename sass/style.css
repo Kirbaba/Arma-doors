@@ -1,0 +1,36 @@
+body {
+  font-weight: 300; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus, a:active {
+    outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.block_title {
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+  float: left;
+  margin-left: 15px;
+  display: block;
+  margin-bottom: 25px;
+  font-weight: 400; }
+  .block_title span {
+    color: #D2D2D2; }
+  .block_title:hover {
+    color: #000; }
+
+.p0 {
+  padding: 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+/*# sourceMappingURL=style.css.map */

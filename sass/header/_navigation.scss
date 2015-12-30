@@ -1,0 +1,65 @@
+.navigation {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	background-color: #484848;
+	height: 61px;
+	&--stock {
+		display: inline-block;
+		float: left;
+		position: relative;
+		top: -3px;
+		height: 67px;
+		line-height: 67px;		
+		left: 0;		
+		color: #fff;
+		a {
+		    color: #fff;
+			display: block;
+			float: left;
+			width: 100%;
+			padding: 0 20px;
+			@include inside-pad;
+			background-color: #F64747;
+			z-index: 999;
+			position: relative;
+			@include transition(.2s);
+			&:hover {
+				background-color: darken(#F64747, 10%);
+			}
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			left: -6px;
+			top: 0px;
+			height: 61px;
+			border: 3px solid transparent;
+			border-right: 3px solid #414141;			
+		}
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			right: -6px;
+			top: 0px;
+			height: 61px;
+			border: 3px solid transparent;
+			border-left: 3px solid #414141;			
+		}
+		
+	}
+	ul {
+		li {
+			display: block;
+			float: left;
+			a {
+				font-size: 14px;
+				padding: 0 25px;
+				color: #fff;
+			}
+		}
+	}
+}

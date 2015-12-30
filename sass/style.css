@@ -1,5 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=latin,cyrillic-ext);
+@import url(http://allfont.ru/allfont.css?fonts=officinasanswinctt-bold);
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  margin-top: 0;
+  padding-top: 0;
+  height: 100%; }
+
 body {
-  font-weight: 300; }
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
 
 a {
   text-decoration: none; }
@@ -9,21 +25,6 @@ a {
 ul {
   list-style-type: none; }
 
-.block_title {
-  color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000;
-  float: left;
-  margin-left: 15px;
-  display: block;
-  margin-bottom: 25px;
-  font-weight: 400; }
-  .block_title span {
-    color: #D2D2D2; }
-  .block_title:hover {
-    color: #000; }
-
 .p0 {
   padding: 0; }
 
@@ -32,5 +33,182 @@ ul {
 
 .align-right {
   text-align: right; }
+
+.location__marker {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 20px;
+  background-image: url("../img/marker-location.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 10px; }
+
+.moscow-metro__marker {
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  margin-right: 5px;
+  background-image: url("../img/moscow-m.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.clock--icon {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/clock.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 10px; }
+
+.phone--icon {
+  width: 10px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  background-image: url("../img/icone-phone.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.contain {
+  width: 1180px;
+  padding: 0 10px;
+  min-width: 1180px;
+  position: relative;
+  display: block;
+  margin: 0 auto; }
+  .contain:before, .contain:after {
+    display: table;
+    content: " "; }
+  .contain:after {
+    clear: both; }
+
+.g-row {
+  margin: 0 -10px; }
+  .g-row:after {
+    clear: both; }
+  .g-row:before, .g-row:after {
+    display: table;
+    content: " "; }
+
+.g-col-12 {
+  width: 100%; }
+
+.g-col-11 {
+  width: 91.66666667%; }
+
+.g-col-10 {
+  width: 83.33333333%; }
+
+.g-col-9 {
+  width: 75%; }
+
+.g-col-8 {
+  width: 66.66666667%; }
+
+.g-col-7 {
+  width: 58.33333333%; }
+
+.g-col-6 {
+  width: 50%; }
+
+.g-col-5 {
+  width: 41.66666667%; }
+
+.g-col-4 {
+  width: 33.33333%; }
+
+.g-col-3 {
+  width: 25%; }
+
+.g-col-2 {
+  width: 16.66666667%; }
+
+.g-col-1 {
+  width: 8.33333333%; }
+
+.g-col-1,
+.g-col-2,
+.g-col-3,
+.g-col-4,
+.g-col-5,
+.g-col-6,
+.g-col-7,
+.g-col-8,
+.g-col-9,
+.g-col-10,
+.g-col-11,
+.g-col-12 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px; }
+
+.header {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 100px;
+  line-height: 100px; }
+  .header__logo {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 80px; }
+    .header__logo a {
+      text-decoration: none; }
+      .header__logo a h3 {
+        font-weight: 900;
+        margin: 0;
+        color: #222;
+        font-size: 34px;
+        letter-spacing: -1px; }
+      .header__logo a p {
+        color: #A1A1A1;
+        font-size: 14px;
+        letter-spacing: 2px;
+        text-align: center; }
+  .header__adress, .header__time {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 50px; }
+    .header__adress p, .header__time p {
+      font-size: 16px;
+      color: #222;
+      padding-bottom: 5px; }
+    .header__adress small, .header__time small {
+      font-size: 13px;
+      color: #8C8C8C;
+      display: block;
+      margin-left: 25px; }
+  .header__time small {
+    margin-left: 30px; }
+  .header__phone {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle; }
+    .header__phone h3 {
+      font-family: "OfficinaSansWinCTT Bold", arial;
+      font-size: 26px;
+      color: #222;
+      margin: 0 30px 15px 0; }
+  .header__ordercall {
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    margin: 0 0 15px; }
+    .header__ordercall a {
+      color: #222;
+      font-size: 14px;
+      text-decoration: underline;
+      text-decoration-style: dotted; }
+      .header__ordercall a:hover {
+        color: #F64747; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+.location__marker {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 20px;
+	background-image: url('../img/marker-location.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 10px;
+}
+
+.moscow-metro__marker {
+	display: inline-block;
+	width: 13px;
+	height: 9px;
+	margin-right: 5px;
+	background-image: url('../img/moscow-m.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.clock--icon {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/clock.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 10px;
+}
+
+.phone--icon {
+	width: 10px;
+	height: 20px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	background-image: url('../img/icone-phone.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}

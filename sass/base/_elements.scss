@@ -85,3 +85,58 @@
 	margin-right: 10px;
 	vertical-align: middle;
 }
+
+.sale-icon {
+	color: #FFF;
+	text-align: center;
+	background-image: url('../img/Layer-393.png');
+	background-repeat: no-repeat;
+	width: 41px;
+	height: 41px;
+	background-position: 50% 0;
+	padding-top: 15px;
+	font-size: 12px;
+}
+
+.price-icon {
+	display: inline-block;
+	height: 33px;
+	width: 29px;
+	background-image: url('../img/Layer-56.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+	vertical-align: middle;
+    margin-top: -5px;
+	
+}
+
+.ribbon-wrapper {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9;
+  top: -5px;
+  left: -5px;
+  .ribbon {
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 15px 0;
+    top: 10px;
+    left: -50px;
+    width: 180px;
+    background: #fec553; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fec553, #f6e3a0); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fec553, #f6e3a0); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fec553, #f6e3a0); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fec553, #f6e3a0); /* Standard syntax */
+  }
+}

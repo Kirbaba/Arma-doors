@@ -51,3 +51,37 @@
 	margin-right: 10px;
 	margin-bottom: -4px;
 }
+
+.size--icon {
+	display: inline-block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	background-image: url('../img/Layer-32.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 10px;
+    vertical-align: middle;
+}
+
+.lock--icon {
+	display: inline-block;
+	width: 32px;
+	height: 33px;
+	background-image: url('../img/Layer-33.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 10px;
+    vertical-align: middle;
+}
+
+.time--icon {
+	display: inline-block;
+	width: 33px;
+	height: 33px;
+	background-image: url('../img/Layer-30.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	margin-right: 10px;
+	vertical-align: middle;
+}

@@ -26,7 +26,16 @@ $(function() {
         
 
 jQuery(document).ready(function ($) {
-     
+  var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: false,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        grabCursor: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+
+    });
 
 });
 

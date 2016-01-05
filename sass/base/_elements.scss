@@ -98,6 +98,19 @@
 	font-size: 12px;
 }
 
+.hit-icon {
+	display: inline-block;
+	width: 39px;
+	height: 41px;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	margin-right: 15px;
+	background-image: url('../img/hit.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
 .price-icon {
 	display: inline-block;
 	height: 33px;
@@ -139,4 +152,87 @@
     background: -moz-linear-gradient(#fec553, #f6e3a0); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#fec553, #f6e3a0); /* Standard syntax */
   }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 530px;
+    margin: 20px auto;
+}
+.swiper-wrapper {
+	margin-top: 10px;
+	height: 490px;
+	margin-bottom: 50px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 1 / 3 * 100%;
+    padding-right: 30px;
+	padding-left: 30px;
+	@include inside-pad;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    //background-image: url('../img/Shape1copy11.png');
+    right: 0;
+    left: auto;
+    width: 31px;
+    height: 31px;
+    background-color: #f54747;
+    @include border-radius(50%);
+    background-size: 35%;
+}
+
+.swiper-button-next {
+	background-image: url('../img/Shape1copy11.png')!important;
+	background-position: 50% 50%;
+}
+
+.swiper-button-prev {
+	background-image: url('../img/Shape1copy10.png')!important;
+	background-position: 50% 50%;
+	left: 0;
+   	width: 31px;
+    height: 31px;
+    background-color: #f54747;
+    @include border-radius(50%);
+    background-size: 35%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	margin-top: -17px;
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+	bottom: 15px;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+	opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-scrollbar {
+	height: 7px;
+}
+.swiper-scrollbar-drag {
+	height: 11px;
+	margin-top: -2px;
+	background-color: #222;
+	background-image: url('../img/Shape1copy7.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }

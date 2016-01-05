@@ -375,8 +375,7 @@
 	float: left;
 	position: relative;
 	width: 100%;
-	padding: 30px 0 90px;
-	border-bottom: 1px solid #ffdd55;
+	padding: 30px 0 90px;	
 	&__item {
 		display: block;
 		float: left;
@@ -459,4 +458,85 @@
 			}
 		}
 	}
+}
+
+.whyweare {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	background-color: #FFF8DD;
+	background-image: url('../img/Layer-764.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 50% 50%;
+	padding: 55px 0 60px;
+	border-top: 1px solid #ffdd55;
+	border-bottom: 1px solid #ffdd55;
+	h1 {
+		margin-bottom: 25px;
+	}
+	&__wrap {
+		overflow: hidden;
+	}
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+
+		// Hide superfluous border
+	    margin: 0 -21px -21px -20px;
+		list-style: none;
+		padding: 0;
+		&__item {
+			flex: 1 0 20%;
+			height: 200px;
+			//border-right: 1px solid #e3ddc5;	
+			margin: 20px 0;
+			border-right: 1px solid #e3ddc5;
+			// background-color: #FbFbFb;
+		}
+	}
+	&__item {
+		display: block;
+		float: left;
+		position: relative;
+		width: calc(100% - 40px);
+		height: 200px;
+		
+		border-bottom: 1px solid #e3ddc5;
+		@include inside-pad;
+	    margin: 25px 20px;
+	    &--img {
+	    	height: 100px;
+	    	display: block;
+	    	float: left;
+	    	position: relative;
+	    	width: 100%;
+	    	img {
+	    		position: relative;
+	    		max-height: 100%;
+	    		max-width: 100%;
+	    		top: 50%;
+	    		left: 50%;
+	    		-webkit-transform: translate(-50%, -50%);
+	    		   -moz-transform: translate(-50%, -50%);
+	    		    -ms-transform: translate(-50%, -50%);
+	    		     -o-transform: translate(-50%, -50%);
+	    		        transform: translate(-50%, -50%);
+	    	}
+	    }
+	    p {
+	    	display: block;
+	    	float: left;
+	    	position: relative;
+	    	padding: 0 40px;
+	    	text-align: center;
+	    	font-size: 16px;
+	    	color: #000;
+	    	margin-top: 15px;
+	    }
+	}
+	
 }

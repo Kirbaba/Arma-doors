@@ -26,6 +26,7 @@ $(function() {
         
 
 jQuery(document).ready(function ($) {
+  var swiper_arr = [];
   var swiper = new Swiper('.swiper-container', {
         scrollbar: '.swiper-scrollbar',
         scrollbarHide: false,
@@ -34,9 +35,18 @@ jQuery(document).ready(function ($) {
         grabCursor: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
-
     });
-
+  swiper_arr.push(swiper);
+  var swiper_new = new Swiper('.samples-swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: false,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        grabCursor: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    swiper_arr.push(swiper_new);
 });
 
 

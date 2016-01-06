@@ -36,17 +36,16 @@ jQuery(document).ready(function ($) {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
     });
-  swiper_arr.push(swiper);
+  
   var swiper_new = new Swiper('.samples-swiper-container', {
-        scrollbar: '.swiper-scrollbar',
+        scrollbar: '.new-swiper-scrollbar',
         scrollbarHide: false,
         slidesPerView: 'auto',
         centeredSlides: false,
         grabCursor: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
+        nextButton: '.new-swiper-button-next',
+        prevButton: '.new-swiper-button-prev'
     });
-    swiper_arr.push(swiper_new);
 });
 
 

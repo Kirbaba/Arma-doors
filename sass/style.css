@@ -464,6 +464,9 @@ button.swiper-pagination-bullet {
 .g-col-1 {
   width: 8.33333333%; }
 
+.g-col-1-5 {
+  width: 20%; }
+
 .g-col-1,
 .g-col-2,
 .g-col-3,
@@ -475,7 +478,8 @@ button.swiper-pagination-bullet {
 .g-col-9,
 .g-col-10,
 .g-col-11,
-.g-col-12 {
+.g-col-12,
+.g-col-1-5 {
   float: left;
   position: relative;
   min-height: 1px;
@@ -506,7 +510,9 @@ button.swiper-pagination-bullet {
   .g-col-11:before,
   .g-col-11:after,
   .g-col-12:before,
-  .g-col-12:after {
+  .g-col-12:after,
+  .g-col-1-5:before,
+  .g-col-1-5:after {
     display: table;
     content: " "; }
   .g-col-1:after,
@@ -520,7 +526,8 @@ button.swiper-pagination-bullet {
   .g-col-9:after,
   .g-col-10:after,
   .g-col-11:after,
-  .g-col-12:after {
+  .g-col-12:after,
+  .g-col-1-5:after {
     clear: both; }
 
 * {
@@ -1684,5 +1691,33 @@ ul {
     color: #FFF;
     font-size: 30px;
     margin-top: 5px; }
+
+.sitemap {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 45px 0 30px;
+  background-color: #FAFAFA; }
+  .sitemap--parent {
+    color: #5A5A5A;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    display: block;
+    float: left;
+    width: 100%; }
+  .sitemap ul {
+    margin-top: 15px;
+    display: block;
+    float: left; }
+    .sitemap ul li {
+      margin-bottom: 15px; }
+  .sitemap--child {
+    color: #222;
+    font-size: 14px;
+    text-decoration: underline; }
+  .sitemap--contacts {
+    margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */

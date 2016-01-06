@@ -28,7 +28,7 @@
 		text-align: center;
 		color: #5A5A5A;
 		font-size: 14px;
-		font-weight: 600;
+		font-weight: normal;
 	}
 }
 
@@ -329,7 +329,7 @@
 			display: none;
 			position: absolute;
 			width: 100%;
-			padding: 15px 0;
+			padding: 10px 0;
 			background-color: rgba(246, 89, 89, .9);
 			color: #fff;
 			top: 40%;
@@ -340,6 +340,7 @@
 			        transform: translateY(-50%);
 			font-size: 25px;
 			z-index: 9;
+		    font-weight: normal;
 		}
 		&--desc {
 			display: block;
@@ -359,6 +360,7 @@
 				font-size: 25px;
 				color: #000;
 				margin: 0;
+				font-weight: normal;
 			}
 		}
 		&:hover {
@@ -437,7 +439,7 @@
 				display: none;
 				position: absolute;
 				width: 100%;
-				padding: 15px 0;
+				padding: 10px 0;
 				background-color: rgba(246, 89, 89, .9);
 				color: #fff;
 				top: 50%;
@@ -449,6 +451,7 @@
 				        transform: translateY(-50%);
 				font-size: 25px;
 				z-index: 9;
+				font-weight: normal;
 			}
 			&:hover {
 				border: 3px solid #f64747;

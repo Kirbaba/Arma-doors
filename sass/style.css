@@ -1607,4 +1607,82 @@ ul {
         color: #FFF;
         font-size: 14px; }
 
+.connection {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+  background-image: url("../img/Layer-102.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%; }
+  .connection .connection__link {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px; }
+    .connection .connection__link a {
+      display: block;
+      width: 32%;
+      padding: 20px 25px;
+      background-color: #484848;
+      margin: 0 auto;
+      font-size: 25px;
+      font-weight: 400;
+      color: #FFF;
+      text-align: center;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear; }
+      .connection .connection__link a:hover {
+        background-color: #2f2f2f; }
+  .connection small {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 100%; }
+    .connection small span {
+      display: block;
+      vertical-align: baseline;
+      zoom: 1;
+      *display: inline;
+      *vertical-align: auto;
+      position: relative;
+      padding: 0 20px;
+      color: #A52724;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center;
+      width: 40px;
+      margin: 15px auto; }
+      .connection small span:before, .connection small span:after {
+        content: '';
+        display: block;
+        width: 1000px;
+        position: absolute;
+        top: 0.73em;
+        border-top: 1px solid red; }
+      .connection small span:before {
+        right: 100%; }
+      .connection small span:after {
+        left: 100%; }
+  .connection h4 {
+    font-size: 25px;
+    text-align: center;
+    color: #A52724;
+    font-weight: 400;
+    margin: 10px 0; }
+  .connection h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 5px; }
+
 /*# sourceMappingURL=style.css.map */

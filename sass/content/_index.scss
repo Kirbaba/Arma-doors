@@ -606,4 +606,73 @@
 	     -o-background-size: cover;
 	        background-size: cover;
 	background-position: 50% 50%;
+	.connection__link {
+		
+		display: block;
+		float: left;
+		width: 100%;
+		margin-bottom: 15px;
+		a {		
+			display: block;
+			width: 32%;	
+			padding: 20px 25px;
+			background-color: #484848;
+			margin: 0 auto;
+			font-size: 25px;
+			font-weight: 400;
+			color: #FFF;
+			text-align: center;
+			@include transition(.2s);
+			&:hover {
+				background-color: darken(#484848, 10%);
+			}
+		}
+	}
+	small {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		float: left;
+		width: 100%;
+		span {
+	        display: block;
+	        vertical-align: baseline;
+	        zoom: 1;
+	        *display: inline;
+	        *vertical-align: auto;
+	        position: relative;
+	        padding: 0 20px;
+	        color: #A52724;
+	        font-size: 14px;
+	        font-weight: 400;
+			text-align: center;
+			width: 40px;
+			margin: 15px auto;
+	        &:before, &:after {
+	            content: '';
+	            display: block;
+	            width: 1000px;
+	            position: absolute;
+	            top: 0.73em;
+	            border-top: 1px solid red;
+	        }
+
+	        &:before { right: 100%; }
+	        &:after { left: 100%; }
+	    }
+	}
+	h4 {
+		font-size: 25px;
+		text-align: center;
+		color: #A52724;
+		font-weight: 400;
+		margin: 10px 0;
+	}
+	h3 {
+		font-weight: bold;
+		text-align: center;
+		color: #FFF;
+		font-size: 30px;
+		margin-top: 5px;
+	}
 }

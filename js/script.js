@@ -48,6 +48,16 @@ jQuery(document).ready(function ($) {
     });
 });
 
+  $(window).scroll(function() {
+    if ($(".navigation").offset().top > 99) {
+        $(".navigation").addClass("navigation--onScroll"); 
+        //$(".header--onScroll").removeClass(".header");       
+    } else {
+       // $(".header--onScroll").addClass("header"); 
+        $(".navigation").removeClass("navigation--onScroll");        
+    }
+});
+
 
 
 

@@ -96,7 +96,7 @@
 			top: 40px; /* the height of the main nav */
 		    padding: 20px 10px 0;
 			margin: 0;
-			z-index: 1;
+			z-index: 99;
 			li {
 				width:170px;
 				float:none;
@@ -107,5 +107,67 @@
 	}
 	.navigation__left {
 		border-right: 1px solid #5c5c5c;
+	}	
+	&--logo {
+		display: none;		
+		line-height: normal;
+		vertical-align: middle;
+		float: left;
+		margin-top: 5px;
+		a {
+			text-decoration: none;		
+			h3 {
+				font-size: 27px;
+				color: #F64747;
+				font-weight: 900;
+				margin: 0;
+				letter-spacing: -1px;
+			}
+			p {
+				font-size: 11px;
+				color: #A1A1A1;
+				letter-spacing: 2px;
+				text-align: center;
+			}
+		}
+	}
+	&--phone {
+		display: none;
+		line-height: normal;
+		vertical-align: middle;
+		margin: 0 0 15px;
+		line-height: 61px;
+		p {
+			font-family: $sansb;
+			font-size: 16px;
+			color: #FFF;
+			line-height: normal;
+			display: inline-block;
+		}
+	}
+	&--onScroll {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;	
+		@include transition(.2s);	
+		ul {
+			li {
+				a {
+					padding: 10px 15px;
+				}
+			}
+		}		
+		.navigation--logo {
+			display: inline-block;		
+		}
+		.navigation--stock {
+			display: none;
+		}
+
+		.navigation--phone { 
+			display: inline-block;
+		}
 	}
 }

@@ -999,26 +999,26 @@ ul {
       margin-left: 25px; }
   .header__time small {
     margin-left: 30px; }
-  .header__phone {
+  .header__phone, .footer__phone {
     display: inline-block;
     line-height: normal;
     vertical-align: middle; }
-    .header__phone h3 {
+    .header__phone h3, .footer__phone h3 {
       font-family: "OfficinaSansWinCTT Bold", arial;
       font-size: 26px;
       color: #222;
       margin: 0 30px 15px 0; }
-  .header__ordercall {
+  .header__ordercall, .footer__ordercall {
     display: inline-block;
     line-height: normal;
     vertical-align: middle;
     margin: 0 0 15px; }
-    .header__ordercall a {
+    .header__ordercall a, .footer__ordercall a {
       color: #222;
       font-size: 14px;
       text-decoration: underline;
       text-decoration-style: dotted; }
-      .header__ordercall a:hover {
+      .header__ordercall a:hover, .footer__ordercall a:hover {
         color: #F64747; }
 
 .about-company {
@@ -1719,5 +1719,46 @@ ul {
     text-decoration: underline; }
   .sitemap--contacts {
     margin-top: 30px; }
+
+.footer {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-color: #222;
+  padding: 30px 0; }
+  .footer p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #FAFAFA; }
+  .footer__social {
+    text-align: center; }
+    .footer__social a {
+      display: inline-block;
+      text-align: center;
+      line-height: 31px;
+      font-size: 20px;
+      margin: 0 5px;
+      width: 31px;
+      height: 31px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      background-color: #F64747;
+      text-decoration: none;
+      color: #222; }
+      .footer__social a i {
+        margin-left: -1px; }
+      .footer__social a:hover {
+        background-color: #f41616; }
+  .footer__ordercall {
+    margin-bottom: 0; }
+    .footer__ordercall a {
+      color: #FFF; }
+  .footer__phone h3 {
+    color: #FFF;
+    font-size: 24px;
+    margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

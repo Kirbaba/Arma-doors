@@ -46,7 +46,7 @@ jQuery(document).ready(function ($) {
         nextButton: '.new-swiper-button-next',
         prevButton: '.new-swiper-button-prev'
     });
-
+//Меню "Готовые двери"
   $('.menu__ready').hover(
     function() {
         $('.menu__ready--open').css("display", "block");
@@ -65,6 +65,7 @@ jQuery(document).ready(function ($) {
         }
     );
 
+//Меню "Двери на заказ"
   $('.menu__toorder').hover(
     function() {
         $('.menu__toorder--open').css("display", "block");
@@ -82,7 +83,30 @@ jQuery(document).ready(function ($) {
             $('.menu__toordery--open').css("display", "none");
         }
     );
+
+    //Меню "Отделка дверей"
+      $('.menu__facing').hover(
+    function() {
+        $('.menu__facing--open').css("display", "block");
+    },
+    function() {
+        if (!$('.menu__facing--open').is(":hover")) {
+            $('.menu__facing--open').css("display", "none");
+        }
+         //$('.menu__ready--open').delay( 800 ).css("display", "none");
+    }
+    );
+    $('.menu__facing--open').hover(
+        function() {},
+        function() {
+            $('.menu__facing--open').css("display", "none");
+        }
+    );
 });
+
+
+
+
 
   $(window).scroll(function() {
     if ($(".navigation").offset().top > 99) {

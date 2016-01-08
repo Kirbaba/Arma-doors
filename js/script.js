@@ -80,12 +80,12 @@ jQuery(document).ready(function ($) {
     $('.menu__toorder--open').hover(
         function() {},
         function() {
-            $('.menu__toordery--open').css("display", "none");
+            $('.menu__toorder--open').css("display", "none");
         }
     );
 
-    //Меню "Отделка дверей"
-      $('.menu__facing').hover(
+//Меню "Отделка дверей"
+    $('.menu__facing').hover(
     function() {
         $('.menu__facing--open').css("display", "block");
     },
@@ -100,6 +100,25 @@ jQuery(document).ready(function ($) {
         function() {},
         function() {
             $('.menu__facing--open').css("display", "none");
+        }
+    );
+
+    //Меню "амки и фурнитура"
+      $('.menu__locks').hover(
+    function() {
+        $('.menu__locks--open').css("display", "block");
+    },
+    function() {
+        if (!$('.menu__locks--open').is(":hover")) {
+            $('.menu__locks--open').css("display", "none");
+        }
+         //$('.menu__ready--open').delay( 800 ).css("display", "none");
+    }
+    );
+    $('.menu__locks--open').hover(
+        function() {},
+        function() {
+            $('.menu__locks--open').css("display", "none");
         }
     );
 });

@@ -188,7 +188,17 @@
 		}
 	}
 	.navigation__left {
-		border-right: 1px solid #5c5c5c;
+		position: relative;
+		&:after {
+			content: "";
+			display: block;
+			width: 1px;
+			height: 40px;
+			position: absolute;
+			right: 0;
+			top: 10px;
+			background-color: #5c5c5c;
+		}
 	}	
 	&--logo {
 		display: none;		

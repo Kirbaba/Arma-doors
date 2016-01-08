@@ -64,6 +64,24 @@ jQuery(document).ready(function ($) {
             $('.menu__ready--open').css("display", "none");
         }
     );
+
+  $('.menu__toorder').hover(
+    function() {
+        $('.menu__toorder--open').css("display", "block");
+    },
+    function() {
+        if (!$('.menu__toorder--open').is(":hover")) {
+            $('.menu__toorder--open').css("display", "none");
+        }
+         //$('.menu__ready--open').delay( 800 ).css("display", "none");
+    }
+    );
+    $('.menu__toorder--open').hover(
+        function() {},
+        function() {
+            $('.menu__toordery--open').css("display", "none");
+        }
+    );
 });
 
   $(window).scroll(function() {

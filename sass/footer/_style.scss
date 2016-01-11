@@ -37,6 +37,9 @@
 		margin-bottom: 0;
 		a {
 			color: #FFF;
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 	&__phone {

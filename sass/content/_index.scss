@@ -368,6 +368,11 @@
 			h3 {
 				display: block;
 			}
+			.prepared__item--desc {
+				p {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
@@ -564,6 +569,9 @@
 				margin-right: 10px;
 				font-size: 23px;
 			}
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 	&__item {
@@ -695,6 +703,9 @@
 		display: block;
 		float: left;
 		width: 100%;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	ul {
 		margin-top: 15px;
@@ -708,6 +719,9 @@
 		color: #222;
 		font-size: 14px;
 		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	&--contacts {
 		margin-top: 30px;

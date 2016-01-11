@@ -146,12 +146,17 @@
 			position: relative;
 			width: 100%;
 			margin-top: 15px;
-			p {
+			a.diffconstructions__link {
+				display: inline-block;
+				width: 100%;
 				text-align: center;
 				color: #F64747;
 				text-decoration: underline;
 				font-size: 16px;
 				margin-bottom: 25px;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 			&__item {
 				display: block;

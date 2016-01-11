@@ -1129,7 +1129,8 @@ ul {
       text-decoration: underline;
       text-decoration-style: dotted; }
       .header__ordercall a:hover, .footer__ordercall a:hover {
-        color: #F64747; }
+        color: #F64747;
+        text-decoration: none; }
 
 .menu__ready--open {
   display: none;
@@ -1290,12 +1291,16 @@ ul {
     position: relative;
     width: 100%;
     margin-top: 15px; }
-    .menu__toorder--open .diffconstructions p {
+    .menu__toorder--open .diffconstructions a.diffconstructions__link {
+      display: inline-block;
+      width: 100%;
       text-align: center;
       color: #F64747;
       text-decoration: underline;
       font-size: 16px;
       margin-bottom: 25px; }
+      .menu__toorder--open .diffconstructions a.diffconstructions__link:hover {
+        text-decoration: none; }
     .menu__toorder--open .diffconstructions__item {
       display: block;
       float: left;
@@ -1843,6 +1848,8 @@ ul {
       border: 2px solid #F64747; }
       .prepared__item:hover h3 {
         display: block; }
+      .prepared__item:hover .prepared__item--desc p {
+        text-decoration: none; }
 
 .construction {
   display: block;
@@ -2019,6 +2026,8 @@ ul {
         color: #F64747;
         margin-right: 10px;
         font-size: 23px; }
+      .samples h1 a:hover {
+        text-decoration: none; }
   .samples__item {
     display: block;
     float: left;
@@ -2145,6 +2154,8 @@ ul {
     display: block;
     float: left;
     width: 100%; }
+    .sitemap--parent:hover {
+      text-decoration: none; }
   .sitemap ul {
     margin-top: 15px;
     display: block;
@@ -2155,6 +2166,8 @@ ul {
     color: #222;
     font-size: 14px;
     text-decoration: underline; }
+    .sitemap--child:hover {
+      text-decoration: none; }
   .sitemap--contacts {
     margin-top: 30px; }
 
@@ -2194,6 +2207,8 @@ ul {
     margin-bottom: 0; }
     .footer__ordercall a {
       color: #FFF; }
+      .footer__ordercall a:hover {
+        text-decoration: none; }
   .footer__phone h3 {
     color: #FFF;
     font-size: 24px;

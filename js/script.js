@@ -22,31 +22,20 @@ $(function() {
     });
 });
 
-
+$(window).scroll(function() {
+    if ($(".navigation").offset().top > 99) {
+        $(".navigation").addClass("navigation--onScroll"); 
+        //$(".header--onScroll").removeClass(".header");       
+    } else {
+       // $(".header--onScroll").addClass("header"); 
+        $(".navigation").removeClass("navigation--onScroll");        
+    }
+});
         
 
 jQuery(document).ready(function ($) {
-  var swiper_arr = [];
-  var swiper = new Swiper('.swiper-container', {
-        scrollbar: '.swiper-scrollbar',
-        scrollbarHide: false,
-        slidesPerView: 'auto',
-        centeredSlides: false,
-        grabCursor: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
-    });
-  
-  var swiper_new = new Swiper('.samples-swiper-container', {
-        scrollbar: '.new-swiper-scrollbar',
-        scrollbarHide: false,
-        slidesPerView: 'auto',
-        centeredSlides: false,
-        grabCursor: true,
-        nextButton: '.new-swiper-button-next',
-        prevButton: '.new-swiper-button-prev'
-    });
-//Меню "Готовые двери"
+
+    //Меню "Готовые двери"
   $('.menu__ready').hover(
     function() {
         $('.menu__ready--open').css("display", "block");
@@ -121,21 +110,35 @@ jQuery(document).ready(function ($) {
             $('.menu__locks--open').css("display", "none");
         }
     );
+
+  var swiper_arr = [];
+  var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: false,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        grabCursor: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+  
+  var swiper_new = new Swiper('.samples-swiper-container', {
+        scrollbar: '.new-swiper-scrollbar',
+        scrollbarHide: false,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        grabCursor: true,
+        nextButton: '.new-swiper-button-next',
+        prevButton: '.new-swiper-button-prev'
+    });
+
 });
 
 
 
 
 
-  $(window).scroll(function() {
-    if ($(".navigation").offset().top > 99) {
-        $(".navigation").addClass("navigation--onScroll"); 
-        //$(".header--onScroll").removeClass(".header");       
-    } else {
-       // $(".header--onScroll").addClass("header"); 
-        $(".navigation").removeClass("navigation--onScroll");        
-    }
-});
+
 
 
 

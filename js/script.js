@@ -23,10 +23,10 @@ $(function() {
 });
 
 $(window).scroll(function() {
-    if ($(".navigation").offset().top > 99) {
+    if ($(".navigation").offset().top >= 99) {
         $(".navigation").addClass("navigation--onScroll"); 
         //$(".header--onScroll").removeClass(".header");       
-    } else {
+    } else if($(".navigation").offset().top < 99){
        // $(".header--onScroll").addClass("header"); 
         $(".navigation").removeClass("navigation--onScroll");        
     }

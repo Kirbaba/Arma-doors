@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 
     $(window).scroll(function() {
         if($(this).scrollTop() != 0) {
@@ -20,10 +20,10 @@ $(function() {
             scrollTop: top
         }, 1000);
     });
-});
+});*/
 
 $(window).scroll(function() {
-    if ($(".navigation").offset().top > 99) {
+    if (window.pageYOffset > 100) {
         $(".navigation").addClass("navigation--onScroll"); 
         //$(".header--onScroll").removeClass(".header");       
     } else {

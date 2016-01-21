@@ -243,7 +243,7 @@
 		left: 0;
 		right: 0;
 		z-index: 9999;	
-		@include transition(.2s);	
+		//@include transition(.2s);
 		.navigation ul.navigation__left li a, .navigation ul.navigation__right li a {
 			padding: 0 15px;
 		}

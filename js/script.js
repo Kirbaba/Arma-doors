@@ -1,3 +1,4 @@
+
 $(function() {
 
     $(window).scroll(function() {
@@ -22,97 +23,114 @@ $(function() {
     });
 });
 
-$(window).scroll(function() {
-    if ($(".navigation").offset().top >= 99) {
-        $(".navigation").addClass("navigation--onScroll"); 
+
+$(window).scroll(function () {
+    if (window.pageYOffset > 100) {
+        $(".navigation").addClass("navigation--onScroll");
         //$(".header--onScroll").removeClass(".header");       
-    } else if($(".navigation").offset().top < 99){
-       // $(".header--onScroll").addClass("header"); 
-        $(".navigation").removeClass("navigation--onScroll");        
+    } else {
+        // $(".header--onScroll").addClass("header");
+        $(".navigation").removeClass("navigation--onScroll");
     }
 });
-        
+
 
 jQuery(document).ready(function ($) {
 
+
     //Меню "Готовые двери"
-  $('.menu__ready').hover(
-    function() {
-        $('.menu__ready--open').css("display", "block");
-    },
-    function() {
-        if (!$('.menu__ready--open').is(":hover")) {
-            $('.menu__ready--open').css("display", "none");
+    $('.menu__ready').hover(
+        function () {
+            $('.menu__ready--open').css("display", "block");
+            if ($.browser.msie) {
+                $('.menu__ready--open').addClass('hover');
+            }
+        },
+        function () {
+            if (!$.browser.msie) {
+                if (!$('.menu__ready--open').is(":hover")) {
+                    $('.menu__ready--open').css("display", "none");
+                }
+            }
+            else {
+                if (!$('.menu__ready--open').hasClass('hover')) {
+                    $('.menu__ready--open').css("display", "none");                    
+                }
+                
+            }
         }
-         //$('.menu__ready--open').delay( 800 ).css("display", "none");
-    }
     );
     $('.menu__ready--open').hover(
-        function() {},
-        function() {
+        function () {
+
+        },
+        function () {
             $('.menu__ready--open').css("display", "none");
         }
     );
 
 //Меню "Двери на заказ"
-  $('.menu__toorder').hover(
-    function() {
-        $('.menu__toorder--open').css("display", "block");
-    },
-    function() {
-        if (!$('.menu__toorder--open').is(":hover")) {
-            $('.menu__toorder--open').css("display", "none");
+    $('.menu__toorder').hover(
+        function () {
+            $('.menu__toorder--open').css("display", "block");
+        },
+        function () {
+            if (!$('.menu__toorder--open').is(":hover")) {
+                $('.menu__toorder--open').css("display", "none");
+            }
+            //$('.menu__ready--open').delay( 800 ).css("display", "none");
         }
-         //$('.menu__ready--open').delay( 800 ).css("display", "none");
-    }
     );
     $('.menu__toorder--open').hover(
-        function() {},
-        function() {
+        function () {
+        },
+        function () {
             $('.menu__toorder--open').css("display", "none");
         }
     );
 
 //Меню "Отделка дверей"
     $('.menu__facing').hover(
-    function() {
-        $('.menu__facing--open').css("display", "block");
-    },
-    function() {
-        if (!$('.menu__facing--open').is(":hover")) {
-            $('.menu__facing--open').css("display", "none");
+        function () {
+            $('.menu__facing--open').css("display", "block");
+        },
+        function () {
+            if (!$('.menu__facing--open').is(":hover")) {
+                $('.menu__facing--open').css("display", "none");
+            }
+            //$('.menu__ready--open').delay( 800 ).css("display", "none");
         }
-         //$('.menu__ready--open').delay( 800 ).css("display", "none");
-    }
     );
     $('.menu__facing--open').hover(
-        function() {},
-        function() {
+        function () {
+        },
+        function () {
             $('.menu__facing--open').css("display", "none");
         }
     );
 
     //Меню "амки и фурнитура"
-      $('.menu__locks').hover(
-    function() {
-        $('.menu__locks--open').css("display", "block");
-    },
-    function() {
-        if (!$('.menu__locks--open').is(":hover")) {
-            $('.menu__locks--open').css("display", "none");
+    $('.menu__locks').hover(
+        function () {
+            $('.menu__locks--open').css("display", "block");
+        },
+        function () {
+            if (!$('.menu__locks--open').is(":hover")) {
+                $('.menu__locks--open').css("display", "none");
+            }
+            //$('.menu__ready--open').delay( 800 ).css("display", "none");
         }
-         //$('.menu__ready--open').delay( 800 ).css("display", "none");
-    }
     );
     $('.menu__locks--open').hover(
-        function() {},
-        function() {
+        function () {
+        },
+        function () {
             $('.menu__locks--open').css("display", "none");
         }
     );
 
-  var swiper_arr = [];
-  var swiper = new Swiper('.swiper-container', {
+    var swiper_arr = [];
+    var swiper = new Swiper('.swiper-container', {
         scrollbar: '.swiper-scrollbar',
         scrollbarHide: false,
         slidesPerView: 'auto',
@@ -121,8 +139,8 @@ jQuery(document).ready(function ($) {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev'
     });
-  
-  var swiper_new = new Swiper('.samples-swiper-container', {
+
+    var swiper_new = new Swiper('.samples-swiper-container', {
         scrollbar: '.new-swiper-scrollbar',
         scrollbarHide: false,
         slidesPerView: 'auto',

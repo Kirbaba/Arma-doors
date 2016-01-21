@@ -570,6 +570,9 @@ ul {
 .align-right {
   text-align: right; }
 
+img {
+  border: none; }
+
 .location__marker {
   display: block;
   float: left;
@@ -1051,12 +1054,7 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear; }
+    z-index: 9999; }
     .navigation--onScroll .navigation ul.navigation__left li a, .navigation--onScroll .navigation ul.navigation__right li a {
       padding: 0 15px; }
     .navigation--onScroll ul li a {

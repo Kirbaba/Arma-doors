@@ -1,0 +1,26 @@
+.samples .swiper-slide {
+	width: 1200 / 4 * 1px;
+}
+.prepared .swiper-slide {
+	width: 1200 / 3 * 1px;
+}
+prepared__item {
+	height: 489px;
+}
+
+.whyweare__grid__item {
+	display: block;
+	float: left;
+	width: 300px;
+}
+
+.discounts__item--price {
+	display: inline-block;
+	text-align: center;
+	p {
+		display: inline-block;
+	}
+	h4 {
+		display: inline-block;
+	}
+}

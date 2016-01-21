@@ -12,4 +12,23 @@ prepared__item {
   float: left;
   width: 300px; }
 
+.discounts__item--price {
+  display: inline-block;
+  text-align: center; }
+  .discounts__item--price p {
+    display: inline-block; }
+  .discounts__item--price h4 {
+    display: inline-block; }
+
+.sale-icon {
+  padding: 12px 5px 10px;
+  background-size: cover; }
+
+.products__price {
+  display: inline-block; }
+  .products__price a {
+    display: inline-block; }
+  .products__price h4 {
+    display: inline-block; }
+
 /*# sourceMappingURL=ie.css.map */
